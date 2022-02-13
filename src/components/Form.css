@@ -1,0 +1,144 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    min-height: 650px;
+    position: relative;
+}
+
+.form-content-left {
+    position: relative;
+}
+
+.form-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #b9b9b9;
+}
+
+.form-success {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #ff3737;
+}
+
+.form-inputs {
+    margin: 0 0 12px 0;
+    width: 80%;
+}
+
+.form-inputs p {
+    font-size: 17px;
+    margin: 6px 0 0 0;
+    color: #ff0000;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    color: #ffffff;
+  }
+  
+  .form-input {
+    display: block;
+    padding: 0 0 0 10px;
+    outline: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+  }
+  
+  .form-input::placeholder {
+    color: #7e7e7e;
+    font-size: 12px;
+  }
+  
+  .form-input-btn {
+    width: 80%;
+    height: 50px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+    background: linear-gradient(90deg, rgb(250, 77, 54) 0%, rgb(134, 236, 0) 100%);
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+  }
+  
+  .form-input-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 81, 81) 100%);
+    transition: all 0.4s ease-out;
+  }
+  
+  .form-input-login {
+    font-size: 17px;
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .form-input-login a {
+    text-decoration: none;
+    color: #ff3737;
+    font-weight: 600;
+  }
+
+
+@media screen and (max-width: 650px) {
+
+  .form-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      padding: 0;
+  }
+
+  .form-content-left {
+      height: 400px;
+  }
+
+  .form-content-right {
+      height: 700px;
+  }
+
+}
